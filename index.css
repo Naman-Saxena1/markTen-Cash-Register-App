@@ -1,0 +1,77 @@
+html
+{
+    background-color: rgb(224, 224, 212);
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    min-width: 340px;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #9c466d;
+    width: 60%;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+h1
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+label
+{
+    font-size:x-large; 
+}
+
+input
+{
+    font-size: large;
+    margin-bottom: 3rem;
+    border-radius: 0.7rem;
+}
+
+#check-btn
+{
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    font-size: large;
+    padding: 0.6rem 1.3rem;
+    margin-bottom: 3rem;
+    border-radius: 0.7rem;
+}
+
+#message
+{
+    display: none;
+}
+
+table,th,td
+{
+    border: 1px solid ;  
+    border-color: white;
+    border-collapse: collapse;
+}
+
+th,td
+{
+    width: 12.5%;
+    text-align: center;
+}
+

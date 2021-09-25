@@ -8,7 +8,39 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Cash Register App</h1>
-    <script src="index.js"></script>
+    <div id="container">
+        <h1>Cash Register App</h1>  
+        <p>Enter the bill amount and cash amount of a customer and know the minimum number of notes to be returned</p>
+        <label for="bill-Amt">Enter Bill Amount</label>
+        <input id="bill-Amt"></input>
+        <label for="cash-given-Amt">Enter Cash Given Amount</label>
+        <input id="cash-given-Amt"></input>
+        <button id="check-btn">Check</button>
+        <p id="message"></p>
+        <h2>Return change amount</h2>
+        <table>
+            <tr>
+                <th>No. of notes</th>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
