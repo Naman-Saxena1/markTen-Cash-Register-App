@@ -12,7 +12,7 @@ function checkButtonClickHandler()
     if(bill_amount>0)
     {
         message.style.display="none";
-        if(cash_given_amount>=bill_amount)
+        if(cash_given_amount>bill_amount)
         {
             let moneyDenominations=[2000,500,100,20,10,5,1];
             let returnAmt = cash_given_amount-bill_amount;
@@ -21,14 +21,15 @@ function checkButtonClickHandler()
                 if(returnAmt>=moneyDenominations[i])
                 {
                     noOfNotesValue = Math.trunc(returnAmt/moneyDenominations[i])
-                    returnAmt = returnAmt%moneyDenominations[i]                    
-                }
+                    returnAmt = returnAmt%moneyDenominations[i]               
+                } 
                 noOfNotes[i].innerText=noOfNotesValue;
-                if(returnAmt==0)
-                {
-                    noOfNotesValue=0
-                }
+                noOfNotesValue=0
             }
+        }
+        else if(cash_given_amount==bill_amount)
+        {
+            messageHandler("No change to be returned")
         }
         else
         {
